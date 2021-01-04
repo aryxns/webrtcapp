@@ -13,18 +13,22 @@
         color: white;
         display: flex;
         height: 100vh;
-        max-width: 100%;
+        width: 90%;
         margin: 0;
-        align-items: center;
-        justify-content: center;
+        position: relative;
+        right: 50px;
         padding: 0 50px;
         font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       }
       video {
+        position: relative;
+        top: 250px;
+        left: 50px;
+        right: 50px;
         background-color: white;
-        max-width: 80%;
+        width: 60%;
         height: 40%;
-        margin: 0 50px;
+        margin: 10px 10px;
         padding-right: 10px;
         border-radius: 10px;
         border-color: red;
@@ -45,11 +49,10 @@
     </style>
   </head>
   <body>
-    <div class="copy">Send your URL to a friend to start a video call</div>
+    <div class="copy">Send your unique URL to a friend.</div>
     <video id="localVideo" autoplay muted></video>
     <video id="remoteVideo" autoplay></video>
 
     <script src="script.js"></script>
-    <button className="mic">MIC</button>
   </body>
 </html>
